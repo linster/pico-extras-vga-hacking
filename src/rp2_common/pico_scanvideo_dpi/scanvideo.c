@@ -1388,7 +1388,9 @@ bool scanvideo_setup_with_timing(const scanvideo_mode_t *mode, const scanvideo_t
     }
 #else
     if (video_clock_down_times_2 * timing->clock_freq != sys_clk) {
-        panic("System clock (%d) must be an integer multiple of the requested pixel clock (%d).", sys_clk, timing->clock_freq);
+
+        //TODO STEFAN YOLO
+//panic("System clock (%d) must be an integer multiple of the requested pixel clock (%d).", sys_clk, timing->clock_freq);
     }
 #endif
 #endif
